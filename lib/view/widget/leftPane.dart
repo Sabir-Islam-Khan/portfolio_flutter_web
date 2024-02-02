@@ -37,8 +37,8 @@ class _LeftPaneState extends ConsumerState<LeftPane> {
                             height: AppClass().getMqHeight(context) * 0.07,
                             child: InkWell(
                               onTap: () async {
-                                await launchUrl(
-                                    Uri.parse("https://github.com/jeeva-HBK"));
+                                await launchUrl(Uri.parse(
+                                    "https://github.com/sabir-Islam-Khan/"));
                               },
                               onHover: (bol) {
                                 if (bol) {
@@ -63,7 +63,10 @@ class _LeftPaneState extends ConsumerState<LeftPane> {
                           Container(
                             height: AppClass().getMqHeight(context) * 0.07,
                             child: InkWell(
-                              onTap: () {},
+                              onTap: () async {
+                                await launchUrl(Uri.parse(
+                                    "https://www.upwork.com/freelancers/~01a92459dc01537b65/"));
+                              },
                               onHover: (bol) {
                                 if (bol) {
                                   ref.read(hoverProvider.notifier).state =
@@ -76,8 +79,7 @@ class _LeftPaneState extends ConsumerState<LeftPane> {
                                 margin: EdgeInsets.only(
                                     bottom: val == "insta" ? 5.0 : 0),
                                 padding: const EdgeInsets.only(bottom: 8.0),
-                                child: SvgPicture.asset(
-                                    'assets/svg/instagram.svg',
+                                child: SvgPicture.asset('assets/svg/upwork.svg',
                                     color: val == "insta"
                                         ? AppColors().neonColor
                                         : AppColors().textColor,
@@ -90,7 +92,7 @@ class _LeftPaneState extends ConsumerState<LeftPane> {
                             child: InkWell(
                               onTap: () async {
                                 await launchUrl(Uri.parse(
-                                    "https://www.linkedin.com/in/jeeva-hbk/"));
+                                    "https://www.linkedin.com/in/sabir-islam-khan-b750aa146/"));
                               },
                               onHover: (bol) {
                                 if (bol) {
@@ -116,7 +118,10 @@ class _LeftPaneState extends ConsumerState<LeftPane> {
                           Container(
                             height: AppClass().getMqHeight(context) * 0.07,
                             child: InkWell(
-                              onTap: () {},
+                              onTap: () async {
+                                await launchUrl(Uri.parse(
+                                    "https://www.facebook.com/sabirislamkhan01/"));
+                              },
                               onHover: (bol) {
                                 if (bol) {
                                   ref.read(hoverProvider.notifier).state =
@@ -130,7 +135,7 @@ class _LeftPaneState extends ConsumerState<LeftPane> {
                                     bottom: val == "twitter" ? 5.0 : 0),
                                 padding: const EdgeInsets.only(bottom: 8.0),
                                 child: SvgPicture.asset(
-                                    'assets/svg/twitter.svg',
+                                    'assets/svg/facebook.svg',
                                     color: val == "twitter"
                                         ? AppColors().neonColor
                                         : AppColors().textColor,
@@ -138,34 +143,34 @@ class _LeftPaneState extends ConsumerState<LeftPane> {
                               ),
                             ),
                           ),
-                          Container(
-                            height: AppClass().getMqHeight(context) * 0.07,
-                            child: InkWell(
-                              onTap: () async {
-                                await launchUrl(Uri.parse(
-                                    "https://stackoverflow.com/users/19705360/mr-jeeva"));
-                              },
-                              onHover: (bol) {
-                                if (bol) {
-                                  ref.read(hoverProvider.notifier).state =
-                                      "stackoverflow";
-                                } else {
-                                  ref.read(hoverProvider.notifier).state = "";
-                                }
-                              },
-                              child: Container(
-                                margin: EdgeInsets.only(
-                                    bottom: val == "stackoverflow" ? 5.0 : 0),
-                                padding: const EdgeInsets.only(bottom: 8.0),
-                                child: SvgPicture.asset(
-                                    'assets/svg/stackoverflow.svg',
-                                    color: val == "stackoverflow"
-                                        ? AppColors().neonColor
-                                        : AppColors().textColor,
-                                    width: 22),
-                              ),
-                            ),
-                          ),
+                          // Container(
+                          //   height: AppClass().getMqHeight(context) * 0.07,
+                          //   child: InkWell(
+                          //     onTap: () async {
+                          //       await launchUrl(Uri.parse(
+                          //           "https://stackoverflow.com/users/19705360/mr-jeeva"));
+                          //     },
+                          //     onHover: (bol) {
+                          //       if (bol) {
+                          //         ref.read(hoverProvider.notifier).state =
+                          //             "stackoverflow";
+                          //       } else {
+                          //         ref.read(hoverProvider.notifier).state = "";
+                          //       }
+                          //     },
+                          //     child: Container(
+                          //       margin: EdgeInsets.only(
+                          //           bottom: val == "stackoverflow" ? 5.0 : 0),
+                          //       padding: const EdgeInsets.only(bottom: 8.0),
+                          //       child: SvgPicture.asset(
+                          //           'assets/svg/stackoverflow.svg',
+                          //           color: val == "stackoverflow"
+                          //               ? AppColors().neonColor
+                          //               : AppColors().textColor,
+                          //           width: 22),
+                          //     ),
+                          //   ),
+                          // ),
                         ],
                       ),
                     );
