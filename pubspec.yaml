@@ -12,6 +12,7 @@ dependencies:
   flutter:
     sdk: flutter
 
+  firebase_core: ^2.25.2
   google_fonts: ^6.1.0 #font
   flutter_svg: ^1.1.1+1 #svg
   flutter_riverpod: ^1.0.4 #state management
