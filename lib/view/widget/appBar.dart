@@ -6,7 +6,7 @@ import 'package:portfolio/resource/appClass.dart';
 import 'package:portfolio/resource/colors.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
 
-class ActionBar extends ConsumerStatefulWidget implements  PreferredSizeWidget {
+class ActionBar extends ConsumerStatefulWidget implements PreferredSizeWidget {
   final AutoScrollController controller;
 
   ActionBar(this.controller, {Key? key}) : super(key: key);
@@ -134,10 +134,13 @@ class _ActionBarState extends ConsumerState<ActionBar> {
           }
           return Row(
             children: [
-              Expanded(child: Container(
-                  width: AppClass().getMqWidth(context) * 0.07,
-                  height: AppClass().getMqHeight(context) * 0.07,
-                  child: Image.asset('assets/svg/appLogo.png',))),
+              Expanded(
+                  child: Container(
+                      width: AppClass().getMqWidth(context) * 0.07,
+                      height: AppClass().getMqHeight(context) * 0.07,
+                      child: Image.asset(
+                        'assets/svg/appLogo.png',
+                      ))),
               Expanded(
                 flex: 9,
                 child: Row(
@@ -260,8 +263,7 @@ class _ActionBarState extends ConsumerState<ActionBar> {
                       },
                       onHover: (bol) {
                         if (bol) {
-                          ref.read(hoverProvider.notifier).state =
-                              "gameTitle";
+                          ref.read(hoverProvider.notifier).state = "gameTitle";
                         } else {
                           ref.read(hoverProvider.notifier).state = "";
                         }
@@ -297,7 +299,7 @@ class _ActionBarState extends ConsumerState<ActionBar> {
                       onHover: (bol) {
                         if (bol) {
                           ref.read(hoverProvider.notifier).state =
-                          "contactTitle";
+                              "contactTitle";
                         } else {
                           ref.read(hoverProvider.notifier).state = "";
                         }
@@ -325,30 +327,6 @@ class _ActionBarState extends ConsumerState<ActionBar> {
                         ),
                       ),
                     ),
-                    InkWell(
-                      onTap: () {
-                        AppClass().downloadResume(context);
-                      },
-                      child: Container(
-                        height: 40,
-                        width: 80,
-                        decoration: BoxDecoration(
-                            color: Colors.transparent,
-                            borderRadius:
-                                BorderRadius.all(Radius.circular(3.0)),
-                            border: Border.all(
-                                color: AppColors().neonColor, width: 1.5)),
-                        child: Center(
-                          child: Text('Resume',
-                              style: TextStyle(
-                                  color: AppColors().neonColor,
-                                  fontSize: 13,
-                                  letterSpacing: 1,
-                                  fontWeight: FontWeight.bold,
-                                  fontFamily: 'sfmono')),
-                        ),
-                      ),
-                    )
                   ],
                 ),
               ),

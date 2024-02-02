@@ -26,7 +26,10 @@ class _ExperienceMobState extends State<ExperienceMob> {
           points: Column(
             children: [
               Padding(
-                padding: const EdgeInsets.only(right: 5.0, top: 10.0,),
+                padding: const EdgeInsets.only(
+                  right: 5.0,
+                  top: 10.0,
+                ),
                 child: Row(
                   children: [
                     Padding(
@@ -372,7 +375,7 @@ class _ExperienceMobState extends State<ExperienceMob> {
                                             : Colors.white,
                                         width: 2))),
                             child: Text(
-                              'Netaccess',
+                              'AsteriskLab',
                               style: TextStyle(
                                   color: data == 0
                                       ? AppColors().neonColor
@@ -400,7 +403,7 @@ class _ExperienceMobState extends State<ExperienceMob> {
                                             : Colors.white,
                                         width: 2))),
                             child: Text(
-                              'Rax-Tech',
+                              'Gym-Champ',
                               style: TextStyle(
                                   color: data == 1
                                       ? AppColors().neonColor
@@ -428,7 +431,7 @@ class _ExperienceMobState extends State<ExperienceMob> {
                                             : Colors.white,
                                         width: 2))),
                             child: Text(
-                              'Techno Kryon',
+                              'Shrink',
                               style: TextStyle(
                                   color: data == 2
                                       ? AppColors().neonColor

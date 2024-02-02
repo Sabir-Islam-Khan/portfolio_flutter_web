@@ -353,7 +353,7 @@ class _ExperienceWebState extends State<ExperienceWeb> {
                                             : Colors.white,
                                         width: 2))),
                             child: Text(
-                              'Netaccess',
+                              'AsteriskLab',
                               style: TextStyle(
                                   color: data == 0
                                       ? AppColors().neonColor
@@ -382,7 +382,7 @@ class _ExperienceWebState extends State<ExperienceWeb> {
                                             : Colors.white,
                                         width: 2))),
                             child: Text(
-                              'Rax-Tech',
+                              'Gym-Champ',
                               style: TextStyle(
                                   color: data == 1
                                       ? AppColors().neonColor
@@ -411,7 +411,7 @@ class _ExperienceWebState extends State<ExperienceWeb> {
                                             : Colors.white,
                                         width: 2))),
                             child: Text(
-                              'Techno Kryon',
+                              'Shrink',
                               style: TextStyle(
                                   color: data == 2
                                       ? AppColors().neonColor

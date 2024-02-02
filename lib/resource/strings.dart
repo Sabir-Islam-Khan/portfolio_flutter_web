@@ -24,35 +24,35 @@ class Strings {
   static final tech4 = ''' PostgreSQL'''; // space for manual padding
 
   /* Exp screen contents */
-  static final expCompName1 = '''Techno Kryon''';
-  static final expDesig1 = '''Android Developer''';
-  static final expDur1 = '''Nov 2019 - Mar 2020''';
+  static final expCompName1 = '''Shrink''';
+  static final expDesig1 = '''Junior Flutter Developer''';
+  static final expDur1 = '''Jan 2020 - July 2020''';
   static final expAbout1 =
-      '''To kick start my carrier in IT, joined as an Intern to gain knowledge and experience in software industry, Mobile Application Development.''';
+      '''To kick start my carrier in IT, joined as an junior flutter developer to gain knowledge and experience in software industry and Mobile Application Development.''';
   static final expAbout1_2 =
-      '''Learned and explored native Android architecture models, network calls and core functionality.''';
+      '''Back then, shrink was a small startup from Singapore focused on developing Tele-Medicine solution. I worked side by side with senior developers and learned a lot about how a tech company operates and also about developement.''';
   static final expAbout1_3 =
-      '''Has worked on several live projects on different platforms such as e-commerce, ERP, CMS Applications.''';
+      '''Shrink played a vital role in my career and gave me a headstart that helped me get hired by several companies from Europe.''';
 
-  static final expCompName2 = '''Rax-Tech International''';
-  static final expDesig2 = '''Mobile App Developer''';
-  static final expDur2 = '''Aug 2020 - Jun 2022''';
+  static final expCompName2 = '''GymChamp Ltd''';
+  static final expDesig2 = '''Senior Software Enginner''';
+  static final expDur2 = '''Aug 2021 - Jun 2022''';
   static final expAbout2 =
-      '''Worked as a senior mobile app developer and maintained a team of Freshers and interns to provide a hands-on solution.''';
+      '''Worked as a Senior flutter developer and maintained a team to create a fitness based SAAS platform.''';
   static final expAbout2_2 =
-      '''Design and maintenance of the key functions of IoT (Internet of Things), Erp, CMS and innovative applications.''';
+      '''Gymchamp provides SAAS platform for gyms at UK to connect and maintain gym-goers easily. Its currently ruling the market at UK and planning to expand to whole europe.''';
   static final expAbout2_3 =
-      '''Experienced many technologies such as wifi (TCP/UDP), BLE, MQTT, LIVE DATA, Google ML - Tensor Flow, GraphQL and so on.''';
+      '''As Senior engineer, I designed the architecture and backend. Picked optimial solution for different challenges and rolled out final product to market.''';
 
-  static final expCompName3 = '''NetAccess India Ltd''';
-  static final expDesig3 = '''Senior Software Engineer''';
+  static final expCompName3 = '''AsteriskLab''';
+  static final expDesig3 = '''Founder & CEO''';
   static final expDur3 = '''Jun 2022 - Present''';
   static final expAbout3 =
-      '''An entity of India's leading business conglomerate Murugappa Group of companies.''';
+      '''At AsteriskLab, we focus on building consumer facing applicaions for businesses around the world. We build robust, high performant, scalable platforms with top notch features.''';
   static final expAbout3_2 =
-      '''Worked with a team of 5 engineers to create field force automation applications, business-to-business applications, etc.''';
+      '''As CEO, my main responsibility is to work on business strategies and management, along with managing clients and do new deals that benifits both us and the client hugely.''';
   static final expAbout3_3 =
-      '''Interfacing with customers on a weekly basis, delivering technology expertise.''';
+      '''Our next target is to create few amazing SAAS product that will dominate both local and international market.''';
 
   /* Contact screen content */
   static final endTxt =
