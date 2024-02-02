@@ -263,41 +263,6 @@ class _ActionBarState extends ConsumerState<ActionBar> {
                       },
                       onHover: (bol) {
                         if (bol) {
-                          ref.read(hoverProvider.notifier).state = "gameTitle";
-                        } else {
-                          ref.read(hoverProvider.notifier).state = "";
-                        }
-                      },
-                      child: Padding(
-                        padding: const EdgeInsets.only(right: 30.0),
-                        child: Row(
-                          children: [
-                            Text("04.",
-                                style: TextStyle(
-                                    color: AppColors().neonColor,
-                                    fontSize: 13,
-                                    fontFamily: 'sfmono')),
-                            Consumer(builder: (context, ref, child) {
-                              String state = ref.watch(hoverProvider);
-                              bool isHovered = (state == "gameTitle");
-                              return Text("Games",
-                                  style: TextStyle(
-                                      color: isHovered
-                                          ? AppColors().neonColor
-                                          : AppColors().textColor,
-                                      fontSize: 13));
-                            }),
-                          ],
-                        ),
-                      ),
-                    ),
-                    InkWell(
-                      onTap: () {
-                        widget.controller.scrollToIndex(5,
-                            preferPosition: AutoScrollPosition.begin);
-                      },
-                      onHover: (bol) {
-                        if (bol) {
                           ref.read(hoverProvider.notifier).state =
                               "contactTitle";
                         } else {
@@ -308,7 +273,7 @@ class _ActionBarState extends ConsumerState<ActionBar> {
                         padding: const EdgeInsets.only(right: 30.0),
                         child: Row(
                           children: [
-                            Text("05.",
+                            Text("04.",
                                 style: TextStyle(
                                     color: AppColors().neonColor,
                                     fontSize: 13,
