@@ -1,11 +1,10 @@
+import 'package:Sabir_Islam_Khan/controller/generalController.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio/controller/generalController.dart';
-import 'package:portfolio/resource/appClass.dart';
-
+import '../../resource/appClass.dart';
 import '../../resource/colors.dart';
 
 class WorkTab extends ConsumerStatefulWidget {
@@ -87,39 +86,35 @@ class _WorkWebState extends ConsumerState<WorkTab> {
       onTap: () async {
         switch (index) {
           case 0:
-           // await launchUrl(Uri.parse(AppClass.gitSafeC19));
+            // await launchUrl(Uri.parse(AppClass.gitSafeC19));
             break;
 
           case 1:
-           // AppClass().alertDialog(context, 'Not Found', 'Sorry the project you requested not found in the repository');
+            // AppClass().alertDialog(context, 'Not Found', 'Sorry the project you requested not found in the repository');
             break;
 
           case 2:
-           // await launchUrl(Uri.parse(AppClass.gitWtIot));
+            // await launchUrl(Uri.parse(AppClass.gitWtIot));
             break;
 
           case 3:
-           // await launchUrl(Uri.parse(AppClass.gitAutoStabilizer));
+            // await launchUrl(Uri.parse(AppClass.gitAutoStabilizer));
             break;
 
           case 4:
-           // await launchUrl(Uri.parse(AppClass.gitPAT));
+            // await launchUrl(Uri.parse(AppClass.gitPAT));
             break;
 
           case 5:
-           // AppClass().alertDialog(context, 'Not Found', 'Sorry the project you requested not found in the repository');
+            // AppClass().alertDialog(context, 'Not Found', 'Sorry the project you requested not found in the repository');
             break;
         }
       },
       onHover: (bool) {
         if (bool) {
-          ref
-              .read(hoverProvider.notifier)
-              .state = "$index";
+          ref.read(hoverProvider.notifier).state = "$index";
         } else {
-          ref
-              .read(hoverProvider.notifier)
-              .state = "";
+          ref.read(hoverProvider.notifier).state = "";
         }
       },
       child: Consumer(builder: (context, ref, child) {
@@ -128,7 +123,9 @@ class _WorkWebState extends ConsumerState<WorkTab> {
         return Container(
           margin: EdgeInsets.all(isHovered ? 8.0 : 0.0),
           child: Tooltip(
-            message: AppClass().projectList[index].projectTitle.toString() + "\n\n" + AppClass().projectList[index].projectContent.toString(),
+            message: AppClass().projectList[index].projectTitle.toString() +
+                "\n\n" +
+                AppClass().projectList[index].projectContent.toString(),
             padding: EdgeInsets.all(20),
             margin: EdgeInsets.all(AppClass().getMqWidth(context) * 0.1),
             waitDuration: Duration(seconds: 3),
@@ -160,7 +157,8 @@ class _WorkWebState extends ConsumerState<WorkTab> {
                           'assets/svg/externalLink.svg',
                           width: 22,
                           height: 22,
-                          color: isHovered ? AppColors().neonColor : Colors.white,
+                          color:
+                              isHovered ? AppColors().neonColor : Colors.white,
                         ),
                       ],
                     ),
@@ -169,7 +167,10 @@ class _WorkWebState extends ConsumerState<WorkTab> {
                       child: Row(
                         children: [
                           Text(
-                            AppClass().projectList[index].projectTitle.toString(),
+                            AppClass()
+                                .projectList[index]
+                                .projectTitle
+                                .toString(),
                             textAlign: TextAlign.left,
                             style: GoogleFonts.robotoSlab(
                                 color: isHovered
@@ -186,7 +187,10 @@ class _WorkWebState extends ConsumerState<WorkTab> {
                       child: Padding(
                         padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
                         child: Text(
-                          AppClass().projectList[index].projectContent.toString(),
+                          AppClass()
+                              .projectList[index]
+                              .projectContent
+                              .toString(),
                           style: GoogleFonts.roboto(
                             color: AppColors().textLight,
                             letterSpacing: 1,

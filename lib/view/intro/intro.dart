@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/resource/responsive.dart';
-import 'package:portfolio/view/intro/introMobile.dart';
-import 'package:portfolio/view/intro/introWeb.dart';
+
 import 'package:scroll_to_index/scroll_to_index.dart';
 
+import '../../resource/responsive.dart';
+import 'introMobile.dart';
 import 'introTab.dart';
+import 'introWeb.dart';
 
 class IntroContent extends StatefulWidget {
   AutoScrollController aScrollController;

@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:portfolio/resource/appClass.dart';
+
+import 'appClass.dart';
 
 class Responsive extends StatefulWidget {
   var mobileView, webView, tabView;

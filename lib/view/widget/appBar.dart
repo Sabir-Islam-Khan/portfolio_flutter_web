@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio/controller/generalController.dart';
-import 'package:portfolio/resource/appClass.dart';
-import 'package:portfolio/resource/colors.dart';
+
 import 'package:scroll_to_index/scroll_to_index.dart';
+
+import '../../controller/generalController.dart';
+import '../../resource/appClass.dart';
+import '../../resource/colors.dart';
 
 class ActionBar extends ConsumerStatefulWidget implements PreferredSizeWidget {
   final AutoScrollController controller;

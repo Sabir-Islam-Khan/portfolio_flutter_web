@@ -4,18 +4,18 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:portfolio/controller/generalController.dart';
-import 'package:portfolio/resource/appClass.dart';
-import 'package:portfolio/view/about/about.dart';
-import 'package:portfolio/view/experience/experience.dart';
-import 'package:portfolio/view/intro/intro.dart';
-import 'package:portfolio/view/widget/appBar.dart';
-import 'package:portfolio/view/widget/leftPane.dart';
-import 'package:portfolio/view/widget/rightPane.dart';
-import 'package:portfolio/view/work/work.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
 
+import '../controller/generalController.dart';
+import '../resource/appClass.dart';
+import 'about/about.dart';
 import 'contact/contact.dart';
+import 'experience/experience.dart';
+import 'intro/intro.dart';
+import 'widget/appBar.dart';
+import 'widget/leftPane.dart';
+import 'widget/rightPane.dart';
+import 'work/work.dart';
 
 class RootScreen extends ConsumerStatefulWidget {
   const RootScreen({Key? key}) : super(key: key);

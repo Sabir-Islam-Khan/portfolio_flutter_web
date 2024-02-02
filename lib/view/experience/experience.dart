@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/resource/responsive.dart';
-import 'package:portfolio/view/experience/experienceMob.dart';
-import 'package:portfolio/view/experience/experienceTab.dart';
 
+import '../../resource/responsive.dart';
+import 'experienceMob.dart';
+import 'experienceTab.dart';
 import 'experienceWeb.dart';
 
 class Experience extends StatefulWidget {

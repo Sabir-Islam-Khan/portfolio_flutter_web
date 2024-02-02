@@ -3,9 +3,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio/controller/generalController.dart';
-import 'package:portfolio/resource/appClass.dart';
 
+import '../../controller/generalController.dart';
+import '../../resource/appClass.dart';
 import '../../resource/colors.dart';
 
 class WorkWeb extends ConsumerStatefulWidget {

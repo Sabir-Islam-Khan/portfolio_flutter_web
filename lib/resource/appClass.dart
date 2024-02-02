@@ -1,8 +1,9 @@
+import 'package:Sabir_Islam_Khan/resource/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
-import 'package:portfolio/model/models.dart';
-import 'package:portfolio/resource/styles.dart';
 import 'package:url_launcher/url_launcher.dart';
+
+import '../model/models.dart';
 
 enum ScreenType { mobile, tab, web }
 

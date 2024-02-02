@@ -1,12 +1,13 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio/resource/strings.dart';
+
 import 'package:scroll_to_index/scroll_to_index.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../resource/appClass.dart';
 import '../../resource/colors.dart';
+import '../../resource/strings.dart';
 
 class IntroTab extends StatefulWidget {
   AutoScrollController aScrollController;
